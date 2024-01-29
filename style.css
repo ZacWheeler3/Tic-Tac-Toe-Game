@@ -7,17 +7,28 @@
 :root {
   --red: #65B891;
   --blue: #0638f0;
-  --winning-blocks: #2874a6;
+  --winning-blocks: #B5FFE1;
 }
+
+@font-face {
+    font-family: 'Eraser'; 
+    src: url('https://www.fontspace.com/eraser-font-f1828'); /* Link to the font file on FontSpace */
+  }
 
 body {
   color: var(--red);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h1 {
   font-size: 54px;
   text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    color:#ffffff ;
+    margin: 20px;
 }
 
 .container {
@@ -73,4 +84,10 @@ button {
 button:hover {
     cursor: pointer;
     transform: translateY(-2px);
+    color: #B5FFE1;
+}
+
+#heart-icon {
+    color: red;
+    font-size: 50px;
 }
