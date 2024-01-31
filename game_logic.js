@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     [2, 4, 6],
   ];
 
+  const winSound = new Audio('bruh.mp3');
+
   function playerHasWon() {
   for (const condition of winningCombos) {
     let [a, b, c] = condition;
@@ -60,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (spaces[a] && spaces[a] == spaces[b] && spaces[a] == spaces[c]) {
       let winningPlayer = spaces[a] === X_Text ? player1Name : player2Name;
       playerText.innerText = `${winningPlayer} has won!`;
+
+      winSound.play();
       return [a, b, c];
     }
   }
