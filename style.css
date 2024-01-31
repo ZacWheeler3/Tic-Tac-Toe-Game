@@ -5,51 +5,53 @@
 }
 
 :root {
-  --red: #65B891;
+  --red: #65b891;
   --blue: #0638f0;
-  --winning-blocks: #B5FFE1;
+  --winning-blocks: #b5ffe1;
 }
 
 @font-face {
-    font-family: 'Eraser'; 
-    src: url('https://www.fontspace.com/eraser-font-f1828'); /* Link to the font file on FontSpace */
-  }
+  font-family: "Eraser";
+  src: url("https://www.fontspace.com/eraser-font-f1828"); /* Link to the font file on FontSpace */
+}
 
 body {
   color: var(--red);
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #nameForm {
-    color: #B5FFE1;
-    font-size: 25px;
-  
-   
+  color: #b5ffe1;
+  font-size: 25px;
 }
-#nameForm input {
-    font-size: 20px;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #ffffff;
-    color: #333;
-    font-weight: bold;
-    
+input {
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
 }
 
-
-
+.submit {
+  background-color: #65b891;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 15px 15px;
+  border-radius: 20px;
+}
 
 h1 {
-    margin-top: 40px;
+  margin-top: 40px;
   font-size: 90px;
   text-transform: uppercase;
 }
 
 h2 {
-    font-size: 20px;
-    color:#ffffff ;
-    margin: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 20px;
 }
 
 .container {
@@ -59,65 +61,64 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #4E878C;
+  background-color: #4e878c;
 }
 
 #gameboard {
-    width: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .box {
-    height: 150px;
-    width: 150px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--red);
-    font-size: 120px;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
-
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
 }
 
 .box:nth-child(3n) {
-border-right: none;
+  border-right: none;
 }
 
 .box:nth-child(6) ~ .box {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 button {
-    margin-top: 40px;
-    padding: 10px 20px ;
-    border-radius: 10px;
-    background-color: var(--red);
-    color: #333;
-    border-color: var(--red);
-    font-size: 18px;
-    transition: 200ms transform;
-    font-weight: 600;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: #333;
+  border-color: var(--red);
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
 }
 
 button:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-    color: #B5FFE1;
+  cursor: pointer;
+  transform: translateY(-2px);
+  color: #b5ffe1;
 }
 
 #heart-icon {
-    color: red;
-    font-size: 50px;
+  color: red;
+  font-size: 50px;
 }
 
 .x {
-    color: red;
+  color: red;
 }
 
 .o {
-    color: blue;
+  color: blue;
 }
+

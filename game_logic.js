@@ -54,17 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   function playerHasWon() {
-    for (const condition of winningCombos) {
-      let [a, b, c] = condition;
-  
-      if (spaces[a] && spaces[a] == spaces[b] && spaces[a] == spaces[c]) {
-        let winningPlayer = spaces[a] === X_Text ? player1Name : player2Name;
-        playerText.innerText = `${winningPlayer} has won!`;
-        return [a, b, c];
-      }
+  for (const condition of winningCombos) {
+    let [a, b, c] = condition;
+
+    if (spaces[a] && spaces[a] == spaces[b] && spaces[a] == spaces[c]) {
+      let winningPlayer = spaces[a] === X_Text ? player1Name : player2Name;
+      playerText.innerText = `${winningPlayer} has won!`;
+      return [a, b, c];
     }
-    return false;
   }
+  return false;
+}
 
   restartBtn.addEventListener("click", restart);
 
