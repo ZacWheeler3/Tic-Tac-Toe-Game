@@ -20,8 +20,29 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+#nameForm {
+    color: #B5FFE1;
+    font-size: 25px;
+  
+   
+}
+#nameForm input {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    
+}
+
+
+
+
 h1 {
-  font-size: 54px;
+    margin-top: 40px;
+  font-size: 90px;
   text-transform: uppercase;
 }
 
@@ -71,7 +92,8 @@ border-right: none;
 }
 
 button {
-    padding: 10px 20px;
+    margin-top: 40px;
+    padding: 10px 20px ;
     border-radius: 10px;
     background-color: var(--red);
     color: #333;
@@ -90,4 +112,12 @@ button:hover {
 #heart-icon {
     color: red;
     font-size: 50px;
+}
+
+.x {
+    color: red;
+}
+
+.o {
+    color: blue;
 }
